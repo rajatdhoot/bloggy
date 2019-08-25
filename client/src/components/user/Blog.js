@@ -24,7 +24,7 @@ const Blog = ({ posts, auth }) => {
    return (
       <React.Fragment>
          <div className="mx-3">
-            <Nav className="justify-content-between mt-2 mb-4">
+            <Nav className="justify-content-between mt-2 mb-2">
                {auth && (
                   <Link to="/blog/post/create">
                      <Button variant="light" className="styleBtn">
