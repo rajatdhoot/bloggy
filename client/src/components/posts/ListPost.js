@@ -7,15 +7,13 @@ import "./post.scss";
 
 const ListPost = ({ posts }) => {
    return (
-      <Container>
-         <div className="grid-container">
-            {posts.map(post => (
-               <Link to={`/blog/post/${post._id}`} key={post._id}>
-                  <Post post={post} />
-               </Link>
-            ))}
-         </div>
-      </Container>
+      <div className="grid-container mx-3">
+         {posts.map(post => (
+            <Link to={`/blog/post/${post._id}`} key={post._id}>
+               <Post post={post} />
+            </Link>
+         ))}
+      </div>
    );
 };
 
